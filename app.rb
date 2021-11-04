@@ -10,9 +10,9 @@ class Battle < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  # get '/' do
-  #   'Testing infrastructure working'
-  # end
+  get '/test' do
+    'Testing infrastructure working'
+  end
 
   get '/' do 
    erb :index
@@ -29,6 +29,8 @@ class Battle < Sinatra::Base
     @player_2_name = session[:player_2_name]
     erb :play
   end
+
+
 
 run! if app_file == $0
 end
