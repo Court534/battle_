@@ -4,8 +4,8 @@ require 'sinatra/base'
 require 'sinatra/reloader'
 
 class Battle < Sinatra::Base
-  enable :sessions 
-  
+  enable :sessions
+
   configure :development do
     register Sinatra::Reloader
   end
@@ -14,8 +14,8 @@ class Battle < Sinatra::Base
     'Testing infrastructure working'
   end
 
-  get '/' do 
-   erb :index
+  get '/' do
+    erb :index
   end
 
   post '/names' do
@@ -30,7 +30,5 @@ class Battle < Sinatra::Base
     erb :play
   end
 
-
-
-run! if app_file == $0
+  run! if app_file == $PROGRAM_NAME
 end

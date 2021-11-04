@@ -1,11 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 feature 'Player names' do
   scenario 'Entering names' do
     visit('/')
-    fill_in :player_1_name, with: 'Courtney'
-    fill_in :player_2_name, with: 'Mona'
-    click_button 'Submit'
+    sign_in_and_play
     expect(page).to have_content 'Courtney vs. Mona'
   end
 end

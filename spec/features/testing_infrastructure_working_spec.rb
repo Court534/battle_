@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 feature 'Testing infrastucture' do
@@ -6,4 +8,3 @@ feature 'Testing infrastucture' do
     expect(page).to have_content 'Testing infrastructure working'
   end
 end
-
