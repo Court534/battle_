@@ -1,6 +1,8 @@
 The project is called 'Battle'. Here is a mockup of how it might look towards the end:
 
 Battle final mockup
+![image](https://user-images.githubusercontent.com/85391216/140393371-4906affc-2a09-44cd-8a07-d4691ff60284.png)
+
 
 Challenge setup
 Here are the complete User Stories for this project. They begin with some 'Basic' User Stories:
