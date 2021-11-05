@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# require 'spec_helper'
-
 def sign_in_and_play
   visit('/')
   fill_in :player_1_name, with: 'Courtney'
